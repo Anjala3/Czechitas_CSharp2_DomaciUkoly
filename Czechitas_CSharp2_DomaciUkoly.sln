@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomaciUkol_Lekce2", "DomaciUkol_Lekce2\DomaciUkol_Lekce2.csproj", "{B988EAE8-A25E-4E84-9C1D-C2C90B07518F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B988EAE8-A25E-4E84-9C1D-C2C90B07518F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B988EAE8-A25E-4E84-9C1D-C2C90B07518F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B988EAE8-A25E-4E84-9C1D-C2C90B07518F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B988EAE8-A25E-4E84-9C1D-C2C90B07518F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3779BC7E-8403-4C78-83D1-1A0BF77D32F1}
+	EndGlobalSection
+EndGlobal
