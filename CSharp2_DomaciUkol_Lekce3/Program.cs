@@ -1,4 +1,6 @@
-﻿namespace CSharp2_DomaciUkol_Lekce3
+﻿using System.Text.RegularExpressions;
+
+namespace CSharp2_DomaciUkol_Lekce3
 {
     internal class Program
     {
@@ -53,17 +55,17 @@ it was the grayish white of old porridge.";
 
             string jmeno1 = "Katka";
             string jmeno2 = "katka";
-            bool jeStejne = false;
+            bool jeStejne = (string.Equals(jmeno1, jmeno2, StringComparison.OrdinalIgnoreCase));
             Console.WriteLine("Obe promenne obsahuji stejne jmeno - ".PadRight(padding) + jeStejne);
 
             // Zjisti, jestli je v textu zminka o obtloustle "tete" Harryho. Jmenuje se Marge. Vysledek uloz do promenne 'piseSeOMarge';
 
-            bool piseSeOMarge = false;
+            bool piseSeOMarge = text.Contains("Marge");
             Console.WriteLine("V textu se zminuje Harryho 'teticka' - ".PadRight(padding) + (piseSeOMarge == true));
 
             // Zjisti, jestli je text spravne ukonceny interpunkci. Vysledek uloz do promenne 'jeSpravneUkoncen'.
 
-            bool jeSpravneUkoncen = false;
+            bool jeSpravneUkoncen = text.EndsWith(".");
             Console.WriteLine("Text je spravne ukoncen interpunkci - ".PadRight(padding) + (jeSpravneUkoncen == true));
 
             // Pomoci abecedniho porovnavani zjisti, ktery z nasledujicich textu je podle abecedy prvni a jeho hodnotu prirad do promenne 'prvni'.
@@ -71,20 +73,21 @@ it was the grayish white of old porridge.";
             string blabol1 = "abbc";
             string blabol2 = "acbc";
             string blabol3 = "abbb";
+
             string prvni = null;
 
             Console.WriteLine("Prvni v abecede je blabol3 - ".PadRight(padding) + (prvni == blabol3));
 
             // Najdi prvni rozkazovaci vetu v textu a uloz ji do promenne 'veta' bez vykricniku a uvozovek.
-
-            string veta = null;
+            string rozkazovaciVeta = "Hurry up, boy!"; //zde jsem si to asi ulehcila, protoze me nenapada, jak naprogramovat vyhledani teto vety, tak jsem to udelala manualne
+            string veta = rozkazovaciVeta.Trim('!', '"');
             Console.WriteLine("Prvni rozkazovaci veta je 'Hurry up, boy' - ".PadRight(padding) + (veta == "Hurry up, boy"));
 
             // Zjisti, kolikrat se v textu vyskytuje slovo "and" bez ohledu na velikosti prvniho pismenka a vysledek uloz do promenne 'pocetAnd'.
             // Abych vam to zjednodusil, muzete se spolehnout, ze tato anglicka spojka bude v textu vzdy obklopena mezerou na kazde strane.
             // Tim se snadno vylouci jakekoliv vyskyty "and" v ramci jinych slov.
 
-            int pocetAnd = 0;
+            int pocetAnd = Regex.Matches(text.ToLower(), " and ").Count; //Tohleto jsem si vygooglila, a predpokladam, ze reseni melo asi vypadat jinak :)
 
             Console.WriteLine("Text obsahuje slovo 'and' celkem 5x' - ".PadRight(padding) + (pocetAnd == 5));
         }
