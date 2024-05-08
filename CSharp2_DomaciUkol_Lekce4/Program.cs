@@ -67,7 +67,13 @@
                 { "mleko", 32 },
                 { "rohlik", 4 }
 
-
             };
+
+            foreach (var item in cenaNakupu)
+            {
+                Console.WriteLine($"Polozka: {item.Key} stoji {item.Value} Kc.");
+            }
+            Console.WriteLine();
         }
     }
+}
