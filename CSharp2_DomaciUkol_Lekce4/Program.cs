@@ -39,6 +39,18 @@
                 Console.WriteLine(s);
             }
 
+            Console.WriteLine();
+
+            // 5. Zjisti, jestli tento list obsahuje nějakou hodnotu pomocí list metody Contains
+
+            bool obsahujeFenykl = seznamOvoce.Contains("Fenykl");
+            Console.WriteLine($"Obsahuje muj seznam ovoce Fenykl? Odpoved:{obsahujeFenykl}.");
+
+            Console.WriteLine();
+
+
+
+
 
         }
     }
