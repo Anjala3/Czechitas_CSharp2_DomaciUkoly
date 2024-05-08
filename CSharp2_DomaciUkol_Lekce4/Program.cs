@@ -9,11 +9,17 @@
             DateTime aktualniDatumACas = DateTime.Now;
             Console.WriteLine($"Dnes je: {aktualniDatumACas}");
 
+            Console.WriteLine();
+
+
             // 2. Vytvoř proměnnou typu DateTime a ulož do ní svoje datum narození. Potom vypiš, kolik dnů od té doby uteklo.
 
             DateTime mojeDatumNarozeni = new DateTime(1989, 09, 20);
             TimeSpan jakJsemStara = aktualniDatumACas - mojeDatumNarozeni;
             Console.WriteLine($"Od meho narozeni ubehlo: {jakJsemStara.TotalDays} dnů.");
+
+            Console.WriteLine();
+
 
             // 3. Vytvoř list stringů a vlož do něj 5 různých hodnot.
 
