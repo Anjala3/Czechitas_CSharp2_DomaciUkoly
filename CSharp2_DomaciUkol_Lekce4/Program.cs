@@ -4,7 +4,10 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            // 1. Vypiš aktuální datum a čas, nemusíš řešit, v kterém je to časovém pásmu.
+
+            DateTime aktualniDatumACas = DateTime.Now;
+            Console.WriteLine(aktualniDatumACas.ToString());
         }
     }
 }
