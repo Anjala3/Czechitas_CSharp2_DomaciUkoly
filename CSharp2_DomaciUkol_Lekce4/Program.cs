@@ -48,10 +48,15 @@
 
             Console.WriteLine();
 
+            // 6. Vypiš do konzole, kolik je v tom listu prvků a připoj k tomu všechny ty hodnoty (např: "2: modra, zelena").
 
 
+            foreach (string s in seznamOvoce)
+            {
+                Console.WriteLine($"{seznamOvoce.IndexOf(s)}." + s);
+            }
 
-
+            Console.WriteLine();
         }
     }
 }
