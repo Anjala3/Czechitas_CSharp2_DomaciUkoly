@@ -57,6 +57,17 @@
             }
 
             Console.WriteLine();
+
+            // 7. Vytvoř slovník, kde klíčem bude položka nákupu (string) a hodnotou cena té položky, a vlož nějaké hodnoty (např: <"chleba", 20>).
+
+            Dictionary<string, int> cenaNakupu = new Dictionary<string, int>
+            {
+                { "chleba", 20 },
+                { "maslo", 55 },
+                { "mleko", 32 },
+                { "rohlik", 4 }
+
+
+            };
         }
     }
-}
