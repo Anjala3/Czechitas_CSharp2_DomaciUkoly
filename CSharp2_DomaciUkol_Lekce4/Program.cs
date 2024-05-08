@@ -18,6 +18,12 @@
             // 3. Vytvoř list stringů a vlož do něj 5 různých hodnot.
 
             List<string> seznamOvoce = new List<string> { "hruska", "mango", "banan", "jahoda" };
+            foreach (string s in seznamOvoce)
+            {
+                Console.WriteLine(s);
+            }
+
+            Console.WriteLine();
 
             // 4. Smaž z tohoto listu libovolnou hodnotu.
 
