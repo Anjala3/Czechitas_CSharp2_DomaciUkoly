@@ -19,6 +19,14 @@
 
             List<string> seznamOvoce = new List<string> { "hruska", "mango", "banan", "jahoda" };
 
+            // 4. Smaž z tohoto listu libovolnou hodnotu.
+
+            seznamOvoce.Remove("hruska");
+            foreach (string s in seznamOvoce)
+            {
+                Console.WriteLine(s);
+            }
+
 
         }
     }
