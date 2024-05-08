@@ -15,6 +15,11 @@
             TimeSpan jakJsemStara = aktualniDatumACas - mojeDatumNarozeni;
             Console.WriteLine($"Od meho narozeni ubehlo: {jakJsemStara.TotalDays} dnů.");
 
+            // 3. Vytvoř list stringů a vlož do něj 5 různých hodnot.
+
+            List<string> seznamOvoce = new List<string> { "hruska", "mango", "banan", "jahoda" };
+
+
         }
     }
 }
