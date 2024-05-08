@@ -74,6 +74,23 @@
                 Console.WriteLine($"Polozka: {item.Key} stoji {item.Value} Kc.");
             }
             Console.WriteLine();
+
+            // 8. Zjisti, jestli slovník obsahuje nějakou konkrétní potravinu a pokud ano, vypiš její cenu, pokud ne, vypiš, že není.
+
+            string hledanaPolozka = "maslo";
+            bool obsahujePolozku = cenaNakupu.ContainsKey(hledanaPolozka);
+
+            if (obsahujePolozku)
+            {
+                Console.WriteLine($"Seznam obsahuje polozku {hledanaPolozka}, ktera stoji {cenaNakupu["maslo"]}");
+            }
+            else
+            {
+                Console.WriteLine($"Seznam {hledanaPolozka} neobsahuje.");
+            }
+
+            Console.WriteLine();
         }
+
     }
 }
